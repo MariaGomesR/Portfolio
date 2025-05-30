@@ -1,0 +1,844 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Song+Myung&family=Viaoda+Libre&display=swap');
+@import 'animate.css';
+:root{
+   
+    --Fonte-bem: 'Viaoda Libre', sans-serif;
+    --corpo: 'Song Myung', sans-serif;
+    --titulos: 'Bodoni Moda', sans-serif;
+
+    --cor-fundo:#f7e9d1;
+    --fontes:#4c2b08 ;
+    --fonte2:#835a3d;
+
+    --animate-duration: 800ms;
+    --animate-delay: 0.9s;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--cor-fundo);
+    margin-left: 10px;
+    overflow-x: hidden;
+}
+
+
+h1{
+    font-family: var(--Fonte-bem); ;
+    font-size: 70px;
+
+    color: var(--fontes);
+}
+
+h2{
+    font-family: var(--fontes);
+    font-size: 25px;
+    color: var(--fontes);
+}
+
+.cursor {
+  display: inline-block;
+  color: black;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+#typed-text {
+  white-space: pre-line; /* mantém as quebras de linha */
+}
+
+
+.primeira_pg {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+
+}
+    
+.navbar{
+    grid-column: span 5 / span 5;
+    grid-row: span 2 / span 2;
+    position: fixed;
+  left: 10px;
+
+}
+
+.navbar {
+    width: 100vw; /* ocupa toda a largura da tela */
+    padding: 40px 0; /* espaçamento interno vertical */
+    background-color: #fcecd2;
+    max-width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    background-color: var(--cor-fundo);
+  }
+  
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+  }
+  
+  .navbar li {
+    white-space: nowrap;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: var(--fontes);
+    font-size: 25px;
+    font-weight: normal;
+    display: inline-block;
+  }
+  
+
+
+.foto {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-row-start: 3;
+    position: relative;
+    left: 150px;
+    margin-top: -50px;
+    display: inline-block;
+    animation: pulse; /* referring directly to the animation's @keyframe declaration */
+   animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+
+.agas {
+    grid-column: span 3 / span 3;
+    grid-row: span 3 / span 3;
+    grid-column-start: 3;
+    grid-row-start: 3;
+    position: relative;
+    left: 100px;
+}
+ 
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+}
+   
+.titulo{
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+    grid-row-start: 2;
+    position: relative;
+    left: 100px;
+}
+
+.texto{
+    grid-column: span 3 / span 3;
+    grid-row: span 3 / span 3;
+    grid-column-start: 3;
+    grid-row-start: 3;
+    margin-top: -450px;
+    position: relative;
+    left: 750px;
+
+}
+
+h3{
+    font-family: var(--fonte2);
+    color: var(--fontes);
+    font-size: 120px;
+    position: relative;
+    margin-top: 165px;
+    left: 100px;
+
+
+}
+
+h4{
+    font-family: var(--fonte2);
+    color: var(--fonte2);
+    font-size: 100px;
+    position: relative;
+    margin-top: 50px;
+    left: 250px;
+}
+.skills{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 35px;
+    margin-top: 5px;
+}
+    
+.html {
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.html img{
+    position: relative;
+    left: 200px;
+}
+
+.css {
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+.css img{
+    position: relative;
+    left: 220px;
+}
+
+.sq{
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 4;
+    position: relative;
+    margin-top: 40px;
+}
+
+.sq img{
+    position: relative;
+    left: 200px;
+}
+
+.Flask{
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 4;
+    position: relative;
+    margin-top: 15px;
+
+}
+
+.Flask img{
+    position: relative;
+    left: 200px;
+    top: 0px;
+}
+
+.javascript{
+    grid-row: span 2 / span 2;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    position: relative;
+    margin-top: 45px;
+}
+
+.javascript img{
+    position: relative;
+    left: 200px;
+}
+.python{
+    grid-row: span 2 / span 2;
+    grid-column-start: 1;
+    grid-row-start: 4;
+    position: relative;
+    margin-top: 60px;
+}
+
+.python img{
+    position: relative;
+    left: 190px;
+}
+
+.titulo{
+    grid-column-start: 1;
+    grid-row-start: 1;
+
+}
+
+h6{
+    text-decoration: none;
+    color: var(--fontes);
+    font-size: 40px;
+    position: relative;
+    top: 100px;
+    align-items: center;
+}
+
+
+h5{
+    font-family: var(--fontes);
+    color:var(--fontes);
+    font-size: 20px;
+    position: relative;
+    margin-top: 50px;
+    left: 100px;
+}
+
+
+.grad{
+     grid-column-start: 1;
+    grid-row-start: 1;
+    margin-top: -550px;
+    left: 30px;
+    position: relative;
+    z-index: -1;
+}
+
+.skills{
+    position: relative;
+    top: 200px;
+}
+
+.projetos {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 8px;
+    margin-top: 100px;
+}
+    
+.game{
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+}
+
+.sailor{
+   grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+}
+
+.loja {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 5;
+}
+
+.investimentos{
+   grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-row-start: 3;
+}
+
+.gtmax{
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 3;
+
+}
+
+.jokenpo{
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 5;
+    grid-row-start: 3;
+}
+
+
+
+.projetos{
+    position: relative;
+    top: 400px;
+    left: 100px;
+    bottom: 30px;
+
+}
+
+.skills img{
+    border-radius: 2px;
+    transition: 0.5s ease-in-out;
+    gap: -10px;
+}
+.skills img:hover {
+  transform: scale(1.1); /* aumenta 10% */
+}
+
+.projetos {
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* ou 2, ou quantas quiser */
+  gap: 200px; /* espaço entre todas as imagens */
+  padding: 20px; /* opcional: espaço interno */
+  left: 150px;
+}
+
+
+
+.projetos img{
+    border-radius: 2px;
+    transition: 0.5s ease-in-out;
+    gap: -10px;
+}
+
+.projetos img:hover {
+  transform: scale(1.1); /* aumenta 10% */
+}
+
+.contato{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+    position: relative;
+    margin-top: 100px;
+    left: 5px
+}
+    
+.titulo2{
+    grid-row: span 3 / span 3;
+}
+
+
+.email{
+     grid-column-start: 1;
+    grid-row-start: 4;
+    left: 100px;
+    position: relative;
+    font-family: var(--fontes);
+    color:var(--fontes);
+    font-size: 20px;
+}
+
+.links {
+    grid-column-start: 1;
+    grid-row-start: 5;
+    position: relative;
+}
+
+.lk{
+    position: relative;
+    margin-left: 100px;
+    top: -70px;
+}   
+
+.links  {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: pulse; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.git{
+    position: relative;
+    margin-left: 240px;
+    top: -140px;
+}
+
+.titulo2 h4{
+    position: relative;
+    top: 5px;
+    left: 100px;
+    font-size: 120px;
+}
+
+.form-container {
+      background-color: var(--cor-fundo);
+      padding: 10px 100px;
+      border-radius: 12px;
+      border-color: black;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+      grid-row: span 5 / span 5;
+      position: relative;
+      top: 140px;
+      height: 500px;
+
+       max-width: 500px;         /* define o limite de largura */             /* adapta em telas menores */
+       margin: 10px auto;
+       
+    }
+
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 16px;
+      border: 1px solid black;
+      border-radius: 8px;
+      box-sizing: border-box;
+      background-color: var(--cor-fundo);
+    }
+
+    textarea {
+      resize: vertical;
+      height: 100px;
+    }
+
+    button {
+      background-color: var(--fontes);
+      color: var(--cor-fundo);
+      border: none;
+      padding: 12px;
+      width: 100%;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: var(--fonte2);
+    }
+
+    .contato{
+        position: relative;
+        top: 100px
+    }
+
+    .projetos{
+        position: relative;
+        top: 200px
+    }
+
+    a{
+        font-family: var(--fontes);
+        color: var(--fontes);
+        font-size: 20px;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }
+
+
+ @media (max-width: 1024px) {
+  h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  h3, h4 {
+    font-size: 70px;
+    text-align: center;
+    left: 0;
+  }
+
+  .navbar ul {
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .foto, .agas, .titulo, .texto, .grad {
+    position: static;
+    margin: 0 auto;
+    text-align: center;
+    
+  }
+
+  .apresentacao {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  .foto img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .agas {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .skills {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .skills div img {
+    left: 0 ;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .skills h5{
+    
+    margin-left: -100px;
+  }
+
+  .projetos {
+    grid-template-columns: 1fr;
+    left: 0;
+    gap: 50px;
+    padding: 10px;
+  }
+
+  .contato {
+    grid-template-columns: 1fr;
+    left: 0;
+    text-align: center;
+  }
+
+  .form-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .lk, .git {
+    margin: 10px auto;
+    top: 0;
+  }
+
+    .grad{
+        display: none;
+    }
+
+    .titulo h6{
+       margin: 50px;
+    }
+}
+
+/* Telas até 600px (celular pequeno) */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h3, h4 {
+    font-size: 50px;
+  }
+
+  .navbar a {
+    font-size: 16px;
+  }
+
+  .form-container {
+    height: auto;
+  }
+
+  input, textarea, button {
+    font-size: 14px;
+  }
+
+  .foto img {
+    width: 150px;
+    height: 150px;
+  }
+
+   .skills {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 20px;
+  }
+
+ .skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .skills div {
+    width: 100%;
+    max-width: 90%;
+    text-align: justify;
+  }
+
+  .skills div img {
+    display: block;
+    margin: 0px;
+    width: 60px;
+    height: auto;
+  }
+
+  .skills div p {
+    font-size: 14px;
+    line-height: 1.5;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    margin: -50px;
+  }
+
+ 
+
+.grad{
+    display: none;
+}
+ .projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .projetos .card {
+    width: 100%;
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .projetos .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .projetos .card p {
+    font-size: 14px;
+    margin-top: 10px;
+    word-wrap: break-word;
+  }
+
+  .contato h3 h4 {
+    margin-left: -300px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.navbar a {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar a:hover {
+  color: black;
+  transform: translateY(-2px);
+}
+
+
+.projetos div {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projetos div:hover {
+  transform: translateY(-5px);
+}
+
+.foto img {
+  transition: transform 0.3s ease;
+}
+
+.foto img:hover {
+  transform: scale(1.05);
+}
+
+.skills img {
+  transition: transform 0.3s ease;
+}
+
+.skills img:hover {
+  transform: scale(1.1);
+}
+
+
+.links img {
+  transition: transform 0.3s ease;
+}
+
+.links img:hover {
+  transform: scale(1.1);
+}
+
+.form-container input,
+.form-container textarea,
+.form-container button {
+  transition: all 0.3s ease;
+}
+
+.form-container input:focus,
+.form-container textarea:focus {
+  transform: scale(1.02);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+  position: relative;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: black; /* Cor do underline */
+  transition: width 0.3s ease;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+/* Se quiser aplicar também para links nos projetos */
+.projetos a {
+  position: relative;
+  text-decoration: none;
+}
+
+.projetos a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+
+.projetos a:hover::after {
+  width: 100%;
+}
+
+/* Para links de contato */
+.links a {
+  position: relative;
+  text-decoration: none;
+}
+
+.links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+
+.links a:hover::after {
+  width: 100%;
+}
