@@ -13,8 +13,8 @@ O objetivo do meu portfólio é apresentar meus projetos, habilidades e experiê
 ---
 
 #### Demonstração 👇
-![print inicio](/static/prints/index.png)
-![print contato](/static/prints/contato.png)
+![print inicio](/prints/index.png)
+![print contato](/prints/contato.png)
 
 
 ---
