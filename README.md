@@ -12,9 +12,9 @@ O objetivo do meu portfólio é apresentar meus projetos, habilidades e experiê
 
 ---
 
-#### Confira abaixo algumas imagens do WebKitty 👇
+#### Demonstração 👇
 ![print inicio](/static/prints/index.png)
-![print cadastro](/static/prints/contato.png)
+![print contato](/static/prints/contato.png)
 
 
 ---
