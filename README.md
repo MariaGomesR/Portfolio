@@ -14,10 +14,9 @@ O objetivo do meu portfólio é apresentar meus projetos, habilidades e experiê
 
 #### Confira abaixo algumas imagens do WebKitty 👇
 ![print inicio](/static/prints/index.png)
-![print cadastro](/static/prints/cadastro.png)
-![print entrar](/static/prints/entrar.png)
-![print chat](/static/prints/chat.png)
+![print cadastro](/static/prints/contato.png)
+
 
 ---
 #### 🔗Link de acesso
->[Site o webchat](https://chat-web-kitty.onrender.com)
+>[Site o webchat](https://portfolio-15o3.onrender.com)
